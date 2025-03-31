@@ -11,26 +11,91 @@
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Logotipo</a>
+			<a class="navbar-brand" href="./index.html">Logotipo</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Página 1</a> <!-- Página principal -->
+						<a class="nav-link active" aria-current="page" href="./index.html">Página 1</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Página 2</a> <!-- Sección de productos -->
+						<a class="nav-link" href="./pagina2.html">Página 2</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Página 3</a> <!-- Sección de productos -->
+						<a class="nav-link" href="./pagina3.html">Página 3</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+	<div class="container mt-4">
+		<h1 class="text-center mb-4">Maravillas Naturales</h1>
+		
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="card">
+					<img src="./images/forest.jpg" class="card-img-top" alt="Bosque">
+					<div class="card-body">
+						<h5 class="card-title">Bosques</h5>
+						<p class="card-text">Los bosques son los pulmones de nuestro planeta, hogar de una increíble biodiversidad y esenciales para mantener el equilibrio ecológico.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="card">
+					<img src="./images/ocean.jpg" class="card-img-top" alt="Océano">
+					<div class="card-body">
+						<h5 class="card-title">Océanos</h5>
+						<p class="card-text">Los océanos cubren más del 70% de la superficie terrestre y son fundamentales para regular el clima global y proveer alimento.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="card">
+					<img src="./images/mountain.jpg" class="card-img-top" alt="Montaña">
+					<div class="card-body">
+						<h5 class="card-title">Montañas</h5>
+						<p class="card-text">Las montañas albergan ecosistemas únicos y son fuente de agua dulce para millones de personas en todo el mundo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="alert alert-success mt-4">
+			<h4 class="alert-heading">¡Protege la naturaleza!</h4>
+			<p>Pequeñas acciones como reciclar, reducir el consumo de plástico y plantar árboles pueden marcar una gran diferencia en la conservación de nuestro planeta.</p>
+		</div>
+
+		<div class="accordion mb-4" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+						¿Por qué son importantes los árboles?
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Los árboles producen oxígeno, absorben dióxido de carbono, regulan la temperatura, previenen la erosión del suelo y proporcionan hábitat para numerosas especies.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+						¿Cómo afecta el cambio climático a la naturaleza?
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						El cambio climático altera los patrones climáticos, derrite los glaciares, aumenta el nivel del mar y amenaza la supervivencia de muchas especies que no pueden adaptarse rápidamente.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 </body>

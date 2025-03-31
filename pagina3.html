@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laboratorio 6</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">Logotipo</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Página 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pagina2.html">Página 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./pagina3.html">Página 3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container mt-4">
+		<h1 class="text-center mb-4">Destinos Fascinantes</h1>
+
+		<div class="row mb-4">
+			<div class="col-md-4">
+				<img src="./images/paris.jpg" class="img-thumbnail mb-2" alt="París">
+				<p>París, la Ciudad de la Luz, es famosa por su arquitectura icónica como la Torre Eiffel y el Arco del Triunfo,
+					además de su incomparable escena artística y gastronómica.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="./images/tokyo.jpg" class="img-thumbnail mb-2" alt="Tokio">
+				<p>Tokio combina lo ultramoderno y lo tradicional, desde rascacielos iluminados con neón hasta templos
+					históricos. Una metrópolis que nunca duerme.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="./images/machupicchu.jpg" class="img-thumbnail mb-2" alt="Machu Picchu">
+				<p>Machu Picchu, la ciudad perdida de los Incas, es uno de los sitios arqueológicos más impresionantes del
+					mundo, ubicado en lo alto de los Andes peruanos.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="card mb-4">
+					<div class="card-header bg-danger text-white">
+						<h5>Consejos para viajeros</h5>
+					</div>
+					<div class="card-body">
+						<p>Viajar es una de las experiencias más enriquecedoras, pero requiere planificación. Aquí algunos consejos:
+						</p>
+						<ul>
+							<li>Investiga sobre la cultura local antes de viajar</li>
+							<li>Lleva siempre copias de tus documentos importantes</li>
+							<li>Aprende frases básicas en el idioma local</li>
+							<li>Empaca ligero pero no olvides lo esencial</li>
+							<li>Ten un seguro de viaje adecuado</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header bg-danger text-white">
+						<h5>Próximos destinos populares</h5>
+					</div>
+					<div class="card-body">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action">Islandia - Auroras boreales</a>
+							<a href="#" class="list-group-item list-group-item-action">Nueva Zelanda - Aventura extrema</a>
+							<a href="#" class="list-group-item list-group-item-action">Marrakech - Cultura y mercados</a>
+							<a href="#" class="list-group-item list-group-item-action">Kyoto - Tradición japonesa</a>
+							<a href="#" class="list-group-item list-group-item-action">Patagonia - Naturaleza virgen</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="progress mb-4">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+				style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85% de viajeros recomiendan estos
+				destinos</div>
+		</div>
+
+		<button type="button" class="btn btn-danger d-block mx-auto mb-4" data-bs-toggle="modal"
+			data-bs-target="#newsletterModal">
+			Suscríbete a nuestro newsletter de viajes
+		</button>
+
+		<div class="modal fade" id="newsletterModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Newsletter de Viajes</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Recibe las mejores ofertas y consejos de viaje directamente en tu correo.</p>
+						<div class="mb-3">
+							<label for="emailInput" class="form-label">Correo electrónico</label>
+							<input type="email" class="form-control" id="emailInput" placeholder="tucorreo@ejemplo.com">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn btn-danger">Suscribirse</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

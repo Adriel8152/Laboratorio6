@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laboratorio 6</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">Logotipo</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Página 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./pagina2.html">Página 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pagina3.html">Página 3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container mt-4">
+		<h1 class="text-center mb-4">Avances Tecnológicos</h1>
+			
+		<div id="techCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./images/ai.jpg" class="d-block w-100" alt="IA" style="object-fit: cover; height: 600px;">
+					<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+						<h5>Inteligencia Artificial</h5>
+						<p>Revolucionando industrias y cambiando la forma en que interactuamos con la tecnología.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./images/virtual-reality.jpg" class="d-block w-100" alt="RV" style="object-fit: cover; height: 600px;">
+					<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+						<h5>Realidad Virtual</h5>
+						<p>Creando experiencias inmersivas para entretenimiento, educación y más.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./images/robotic.jpg" class="d-block w-100" alt="Robótica" style="object-fit: cover; height: 600px;">
+					<div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+						<h5>Robótica</h5>
+						<p>Automatizando procesos y mejorando la eficiencia en múltiples sectores.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+
+		<div class="row mb-4">
+			<div class="col-md-6">
+				<p>La tecnología ha transformado radicalmente nuestra forma de vivir, trabajar y comunicarnos en las últimas décadas. Desde la invención de internet hasta los smartphones, cada avance nos acerca a un futuro más conectado.</p>
+				<p>La inteligencia artificial está permitiendo avances en medicina, con algoritmos que pueden diagnosticar enfermedades con mayor precisión que muchos especialistas humanos. Además, está optimizando procesos industriales y creando nuevas formas de interacción humano-máquina.</p>
+				<p>La computación cuántica promete resolver problemas que actualmente son imposibles para las computadoras tradicionales, lo que podría revolucionar campos como la criptografía, la química y el modelado climático.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h5>Próximas tendencias tecnológicas</h5>
+					</div>
+					<div class="card-body">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Internet de las cosas (IoT)</li>
+							<li class="list-group-item">Blockchain y Web3</li>
+							<li class="list-group-item">Computación cuántica</li>
+							<li class="list-group-item">Biología sintética</li>
+							<li class="list-group-item">Energías limpias tecnológicas</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toast show mb-4" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<strong class="me-auto">Notificación</strong>
+				<small>Ahora</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				La tecnología avanza rápidamente. ¡Mantente actualizado!
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
